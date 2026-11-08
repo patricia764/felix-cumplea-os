@@ -1,0 +1,211 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Leidy</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <!-- MENU DE NAVEGACION -->
+    <header>
+        <h2>💕 Para Leidy</h2>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#galeria">Fotografías</a>
+            <a href="#recuerdos">Recuerdos</a>
+            <a href="#carta">Carta</a>
+            <a href="#sorpresa">Sorpresa</a>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section id="inicio" class="inicio">
+
+        <p class="pequeno">UN DÍA ESPECIAL PARA ALGUIEN ESPECIAL</p>
+
+        <h1>¡Feliz Cumpleaños, Leidy!</h1>
+
+        <div class="pastel">🎂</div>
+
+        <p>
+            Hoy celebrmos otro año mas que te cae encima  espero que te guste este detalle
+            lunes o marte te invito por mochis a la tienda coreana .
+        </p>
+
+        <a href="#galeria" class="boton">
+            Descubrir recuerdos 💗
+        </a>
+
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="seccion">
+
+        <h2> Observen a esta Negrita Hermosa 📸</h2>
+
+        <p class="descripcion">
+            Cada foto fue dificil de encontrar </p>
+
+        <div class="galeria">
+
+            <img src="imagenes/leidy1.jpg"
+            alt="Fotografía de Leidy"
+             onclick="abrirFoto(this.src, 'esa mirada que dice mil cosas en segundos. 💗')">
+
+
+            <img src="imagenes/leidy2.jpg"
+            alt="Fotografía de Leidy"
+            onclick="abrirFoto(this.src, 'Que nunca te falten motivos para sonreír y ser feliz. 🌸')">
+
+            <img src="imagenes/leidy3.jpg"
+            alt="Fotografía de Leidy"
+            onclick="abrirFoto(this.src, 'Eres una persona única y mereces cosas maravillosas. ✨')">
+
+            <img src="imagenes/leidy4.jpg"
+            alt="Fotografía de Leidy"
+            onclick="abrirFoto(this.src, 'Que la vida te regale muchos momentos inolvidables. 💕')">
+            
+                     <img src="imagenes/leidy5.jpg" alt="Leidy 5"
+            onclick="abrirFoto(this.src, 'Cada momento tiene algo especial que merece recordarse. 💕')">
+
+            <img src="imagenes/leidy6.jpg" alt="Leidy 6"
+            onclick="abrirFoto(this.src, 'Sigue creando recuerdos que te hagan feliz. 🌸')">
+
+            <img src="imagenes/leidy7.jpg" alt="Leidy 7"
+            onclick="abrirFoto(this.src, 'Nunca dejes de perseguir tus sueños. 🩺')">
+
+            <img src="imagenes/leidy8.jpg" alt="Leidy 8"
+            onclick="abrirFoto(this.src, 'Que la vida te sorprenda con cosas maravillosas. 💖')">
+
+            <img src="imagenes/leidy9.jpg" alt="Leidy 9"
+            onclick="abrirFoto(this.src, 'Tu esencia es lo que te hace tan especial. 🦋')">
+
+            <img src="imagenes/leidy10.jpg" alt="Leidy 10"
+            onclick="abrirFoto(this.src, 'Que nunca te falten ilusiones y nuevos comienzos. 🌷')">
+
+            <img src="imagenes/leidy11.jpg" alt="Leidy 11"
+            onclick="abrirFoto(this.src, 'Sigue brillando a tu manera. ✨')">
+
+            <img src="imagenes/leidy12.jpg" alt="Leidy 12"
+            onclick="abrirFoto(this.src, 'Un futuro lleno de sueños, éxitos y felicidad te espera. 💗')">
+        </div>
+
+    </section>
+
+    <!-- VENTANA DE FOTOGRAFIA -->
+    <div id="ventana" class="ventana" onclick="cerrarFoto()">
+
+        <span class="cerrar">&times;</span>
+
+        <img id="fotoGrande" alt="Fotografía ampliada">
+
+        <p id="textoFoto"></p>
+
+    </div>
+
+    <!-- RECUERDOS -->
+    <section id="recuerdos" class="seccion recuerdos">
+
+        <h2>Momentos que merecen recordarse 🌷</h2>
+
+        <p>
+            La vida está llena de pequeños momentos que se
+            convierten en grandes recuerdos.
+        </p>
+
+        <div class="recuerdo">
+            <span>🌸</span>
+            <h3>Tu alegría</h3>
+            <p>Que nunca pierdas esa luz tan bonita que llevas contigo.</p>
+        </div>
+
+        <div class="recuerdo">
+            <span>💗</span>
+            <h3>Tu esencia</h3>
+            <p>Nunca dejes de ser esa persona especial que eres.</p>
+        </div>
+
+        <div class="recuerdo">
+            <span>✨</span>
+            <h3>Tus sueños</h3>
+            <p>Que cada año te acerque un poquito más a todo lo que deseas.</p>
+        </div>
+
+    </section>
+
+    <!-- CARTA -->
+    <section id="carta" class="seccion">
+
+        <h2>Una carta para ti 💌</h2>
+
+        <div class="carta">
+
+            <p>Querida Leidy:</p>
+
+            <p>
+                Hoy es un día para celebrar lo maravillosa que eres.
+                Deseo que esta nueva etapa de tu vida esté llena
+                de salud, amor, felicidad y muchas oportunidades.
+            </p>
+
+            <p>
+                Que nunca te falten personas que te quieran,
+                razones para sonreír y sueños por cumplir.
+                Disfruta cada instante y recuerda lo especial
+                que eres para quienes te rodean.
+            </p>
+
+            <p>
+                ¡Que tengas un cumpleaños hermoso!
+            </p>
+
+            <h3>Con mucho cariño Patty ❤️</h3>
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- SORPRESA -->
+    <section id="sorpresa" class="seccion sorpresa">
+
+        <h2>Y todavía hay algo más... 🎁</h2>
+
+        <p>Tenemos un último mensaje para ti.</p>
+
+        <button onclick="mostrarSorpresa()">
+            Abrir sorpresa 💝
+        </button>
+
+        <div id="mensajeSorpresa">
+            <h2>¡Feliz vida, Leidy! 💗</h2>
+
+            <p>
+                Que todos tus días estén llenos de felicidad,
+                que tus sueños se hagan realidad y que nunca
+                olvides lo valiosa que eres.
+            </p>
+
+            <p>¡Te mereces lo más bonito del mundo! 🌷</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Hecho con mucho cariño para Leidy 💕</p>
+        <p>me desperte en la madrugada y de la nada mi cerebro dijo hagamole un html (una pagina web) a katiuca y aqui el resutado .</p>
+  </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

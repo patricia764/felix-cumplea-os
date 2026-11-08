@@ -1,0 +1,283 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #fff5fa;
+    color: #65445d;
+}
+
+/* MENU */
+
+header {
+    background: #e9c4d9;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: #813f70;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #754263;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* INICIO */
+
+.inicio {
+    min-height: 500px;
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #f8d9e9, #e8d8f4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pequeno {
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.inicio h1 {
+    font-size: 48px;
+    color: #a34d83;
+    margin: 20px 0;
+}
+
+.pastel {
+    font-size: 90px;
+    animation: flotar 2s infinite;
+}
+
+@keyframes flotar {
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.inicio p {
+    max-width: 600px;
+    line-height: 1.8;
+    margin: 15px;
+}
+
+.boton, button {
+    background: #b86d9c;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.boton:hover, button:hover {
+    background: #884c79;
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+
+.seccion {
+    padding: 65px 25px;
+    text-align: center;
+}
+
+.seccion h2 {
+    color: #a34d83;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+/* GALERIA */
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.galeria img {
+    width: 210px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 6px solid white;
+    box-shadow: 0 5px 15px #dcb8ce;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.08) rotate(2deg);
+}
+
+/* VENTANA DE FOTOS */
+
+.ventana {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(35, 15, 35, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.ventana img {
+    max-width: 90%;
+    max-height: 65vh;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.ventana p {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cerrar {
+    color: white;
+    font-size: 40px;
+    align-self: flex-end;
+}
+
+/* RECUERDOS */
+
+.recuerdos {
+    background: #f8e5ef;
+}
+
+.recuerdo {
+    background: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px #e6c6d9;
+}
+
+.recuerdo span {
+    font-size: 35px;
+}
+
+.recuerdo h3 {
+    color: #a34d83;
+    margin: 10px;
+}
+
+/* CARTA */
+
+.carta {
+    max-width: 650px;
+    background: white;
+    padding: 35px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #e7c5d9;
+    text-align: left;
+    line-height: 2;
+}
+
+.carta h3 {
+    text-align: right;
+    color: #a34d83;
+}
+
+
+
+/* SORPRESA */
+
+.sorpresa button {
+    margin: 20px;
+}
+
+#mensajeSorpresa {
+    display: none;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #f5d9e9;
+    border-radius: 20px;
+    line-height: 1.8;
+}
+
+#mensajeSorpresa h2 {
+    margin-bottom: 15px;
+}
+
+/* PIE DE PAGINA */
+
+footer {
+    background: #dcb6ce;
+    padding: 25px;
+    text-align: center;
+    color: #754263;
+    line-height: 1.8;
+}
+
+/* TELEFONOS */
+
+@media (max-width: 600px) {
+
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .inicio h1 {
+        font-size: 34px;
+    }
+
+    .galeria img {
+        width: 140px;
+        height: 180px;
+    }
+
+}
